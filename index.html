@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+  <svg height="810" width="800">
+    <ellipse cx="440" cy="100" rx="150" ry="30" style="fill:purple" />
+    <ellipse cx="440" cy="70" rx="130" ry="20" style="fill:lime" />
+    <ellipse cx="440" cy="45" rx="110" ry="15" style="fill:yellow" />
+
+    <polygon points="200,110 140,298 290,178 110,178 260,298"
+            style="fill:lime;stroke:purple;stroke-width:5;fill-rule:nonzero;" />
+
+    <marker id="markerSquare" markerWidth="7" markerHeight="7" refX="4" refY="4" orient="auto">
+        <rect x="1" y="1" width="5" height="5" style="stroke: none; fill:#000000;"/>
+    </marker>
+
+    <marker id="markerArrow" markerWidth="13" markerHeight="13" refX="2" refY="7" orient="auto">
+        <path d="M2,2 L2,13 L8,7 L2,2" style="fill: #000000;" />
+    </marker>
+
+    <path d="M30,20 l50,0 l0,50 l50,0" style="stroke: #0000cc; stroke-width: 1px; fill: none;
+             marker-start: url(#markerSquare);
+             marker-mid: url(#markerSquare);
+             marker-end: url(#markerArrow);"
+    />
+
+</body>
+</html>
